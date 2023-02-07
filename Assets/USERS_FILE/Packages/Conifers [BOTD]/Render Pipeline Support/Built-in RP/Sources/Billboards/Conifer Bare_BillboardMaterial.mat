@@ -51,7 +51,7 @@ Material:
     - _BillboardScale: 2
     - _BumpScale: 1
     - _Coverage: 0
-    - _Cutoff: 0.4
+    - _Cutoff: 0.59
     - _EnableTransFade: 0
     - _GbufferLighting: 0
     - _NormalScale: 1
