@@ -10,13 +10,15 @@ Material:
   m_Name: M Conifer Leaves BODT
   m_Shader: {fileID: 4800000, guid: 201af1dd904ba734a9565138284d3a5d, type: 3}
   m_ValidKeywords:
+  - _GBUFFERLIGHTING_SIMPLE
+  - _LEAFTUMBLING
   - _LEAFTURBULENCE
+  - _NORMALINDEPTHNORMALPASS
   - _NORMALMAP
   m_InvalidKeywords:
   - GEOM_TYPE_LEAF
   - _ALPHAPREMULTIPLY_ON
   - _EMISSION
-  - _GBUFFERLIGHTING_STANDARD
   - _METALLICGLOSSMAP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
@@ -109,12 +111,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AmbientReflection: 0
+    - _AmbientReflection: 1
     - _AmbientTranslucency: 2
     - _AnimateNormal: 1
     - _ApplyCookiesForTransmission: 0
     - _ApplyNormal: 1
-    - _ApplyNormalDepthNormal: 0
+    - _ApplyNormalDepthNormal: 1
     - _BackFaceSmoothness: 1
     - _BackfaceSmoothness: 1
     - _BranchWind: 0
@@ -124,7 +126,7 @@ Material:
     - _Coverage: 0
     - _Cull: 0
     - _Culling: 0
-    - _Cutoff: 0.195
+    - _Cutoff: 0.3
     - _DebugBending: 0
     - _DebugMode: 4
     - _DetailMode: 0
@@ -132,13 +134,13 @@ Material:
     - _DstBlend: 10
     - _EdgeFlutterInfluence: 0
     - _EnableAdvancedEdgeBending: 1
-    - _EnableLeafTumbling: 0
+    - _EnableLeafTumbling: 1
     - _EnableLeafTurbulence: 1
     - _EnableNormalRotation: 0
     - _EnableShadowMap: 0
     - _EnableTransFade: 0
     - _FadeOutWind: 0
-    - _GbufferLighting: 0
+    - _GbufferLighting: 1
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -164,14 +166,14 @@ Material:
     - _Tangents: 0
     - _TimeOffset: 0.25
     - _TranslucencyStrength: 1
-    - _TumbleFrequency: 1.43
+    - _TumbleFrequency: 0.6
     - _TumbleStrength: 0.012
     - _UVSec: 0
     - _UseArrays: 0
     - _UseDetails: 0
     - _ViewDependency: 0.7
-    - _WindVariation: 0.0245
-    - _Wrap: 0
+    - _WindVariation: 0
+    - _Wrap: 0.5
     - _ZWrite: 0
     m_Colors:
     - _AdvancedEdgeBending: {r: 0.6, g: 1.3, b: 0, a: 0}
@@ -179,7 +181,7 @@ Material:
     - _BaseWindMultipliers: {r: 0.6, g: 1, b: 1, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _HueVariation: {r: 1, g: 1, b: 1, a: 0}
-    - _SpecColor: {r: 0.19955868, g: 0.5754717, b: 0, a: 1}
-    - _Translucency: {r: 3.37, g: 4, b: 1, a: 0.01}
+    - _HueVariation: {r: 0, g: 0.9, b: 0.8255172, a: 0.1}
+    - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _Translucency: {r: 1, g: 4, b: 1, a: 0.01}
   m_BuildTextureStacks: []
