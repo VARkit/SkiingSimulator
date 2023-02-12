@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 7416536dbe0334cfd888dd1beb75a9fb, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -37,8 +37,8 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028346, g: 0.22571373, b: 0.30692244, a: 1}
+  m_Sun: {fileID: 1046540360}
+  m_IndirectSpecularColor: {r: 0.03168144, g: 0.044386953, b: 0.07880458, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -98,7 +98,8 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: b85e93b81c19aab44a7c7f8a9d661304,
+    type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -130,9 +131,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1737484874}
     m_Modifications:
+    - target: {fileID: 1116564543275048, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1348583502729984, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1362722233706330, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
       propertyPath: m_Name
       value: Mountain_02 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362722233706330, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641600170298054, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4597459064730808, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
       propertyPath: m_RootOrder
@@ -190,6 +207,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_Size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.0010572372
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.000057237117
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.000006977464
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
 --- !u!4 &22424349 stripped
@@ -205,9 +242,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1737484874}
     m_Modifications:
+    - target: {fileID: 1649900449727358, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1729850361431790, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
       propertyPath: m_Name
       value: Mountain_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729850361431790, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1730853569426306, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763870085372918, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4551950118038164, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
       propertyPath: m_RootOrder
@@ -267,8 +320,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 205699178633270382, guid: aba4846911a4e4940b4a0d86ed48706f,
         type: 3}
+      propertyPath: m_Size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 205699178633270382, guid: aba4846911a4e4940b4a0d86ed48706f,
+        type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
-      value: 0.3990034
+      value: 0.0010572372
+      objectReference: {fileID: 0}
+    - target: {fileID: 205699178633270382, guid: aba4846911a4e4940b4a0d86ed48706f,
+        type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.000057237117
+      objectReference: {fileID: 0}
+    - target: {fileID: 205699178633270382, guid: aba4846911a4e4940b4a0d86ed48706f,
+        type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.000006977464
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
@@ -301,6 +369,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Terrain_trace_for_2_players
+      objectReference: {fileID: 0}
+    - target: {fileID: 6250898373956744585, guid: a9b819c9350ee0740b8ed984bb254cc9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6250898373956744631, guid: a9b819c9350ee0740b8ed984bb254cc9,
         type: 3}
@@ -362,7 +435,8 @@ PrefabInstance:
       propertyPath: m_TreeBillboardDistance
       value: 50
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6250898373956744630, guid: a9b819c9350ee0740b8ed984bb254cc9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a9b819c9350ee0740b8ed984bb254cc9, type: 3}
 --- !u!1001 &444802472
 PrefabInstance:
@@ -371,9 +445,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1737484874}
     m_Modifications:
+    - target: {fileID: 1116564543275048, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1348583502729984, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1362722233706330, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
       propertyPath: m_Name
       value: Mountain_02 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362722233706330, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641600170298054, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4597459064730808, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
       propertyPath: m_RootOrder
@@ -431,6 +521,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_Size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.0010572372
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.000057237117
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.000006977464
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
 --- !u!1001 &530889132
@@ -440,9 +550,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1737484874}
     m_Modifications:
+    - target: {fileID: 1649900449727358, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1729850361431790, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
       propertyPath: m_Name
       value: Mountain_01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729850361431790, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1730853569426306, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763870085372918, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4551950118038164, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
       propertyPath: m_RootOrder
@@ -502,8 +628,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 205699178633270382, guid: aba4846911a4e4940b4a0d86ed48706f,
         type: 3}
+      propertyPath: m_Size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 205699178633270382, guid: aba4846911a4e4940b4a0d86ed48706f,
+        type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
-      value: 0.3990034
+      value: 0.0010572372
+      objectReference: {fileID: 0}
+    - target: {fileID: 205699178633270382, guid: aba4846911a4e4940b4a0d86ed48706f,
+        type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.000057237117
+      objectReference: {fileID: 0}
+    - target: {fileID: 205699178633270382, guid: aba4846911a4e4940b4a0d86ed48706f,
+        type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.000006977464
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
@@ -563,9 +704,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1737484874}
     m_Modifications:
+    - target: {fileID: 1116564543275048, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1348583502729984, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1362722233706330, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
       propertyPath: m_Name
       value: Mountain_02 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362722233706330, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641600170298054, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4597459064730808, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
       propertyPath: m_RootOrder
@@ -625,8 +782,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
         type: 3}
+      propertyPath: m_Size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
-      value: 0.53934777
+      value: 0.0010572372
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.000057237117
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.000006977464
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
@@ -712,9 +884,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1737484874}
     m_Modifications:
+    - target: {fileID: 1116564543275048, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1348583502729984, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1362722233706330, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
       propertyPath: m_Name
       value: Mountain_02 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362722233706330, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641600170298054, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4597459064730808, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
       propertyPath: m_RootOrder
@@ -772,6 +960,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_Size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.0010572372
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.000057237117
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.000006977464
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
 --- !u!4 &965225693 stripped
@@ -787,9 +995,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1737484874}
     m_Modifications:
+    - target: {fileID: 1116564543275048, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1348583502729984, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1362722233706330, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
       propertyPath: m_Name
       value: Mountain_02 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362722233706330, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641600170298054, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4597459064730808, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
       propertyPath: m_RootOrder
@@ -846,6 +1070,26 @@ PrefabInstance:
     - target: {fileID: 4597459064730808, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_Size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.0010572372
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.000057237117
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.000006977464
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
@@ -918,7 +1162,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -1095,9 +1339,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1737484874}
     m_Modifications:
+    - target: {fileID: 1116564543275048, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1348583502729984, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1362722233706330, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
       propertyPath: m_Name
       value: Mountain_02 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362722233706330, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641600170298054, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4597459064730808, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
       propertyPath: m_RootOrder
@@ -1155,6 +1415,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_Size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.0010572372
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.000057237117
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.000006977464
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
 --- !u!1001 &1399613121
@@ -1164,9 +1444,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1737484874}
     m_Modifications:
+    - target: {fileID: 1116564543275048, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1348583502729984, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1362722233706330, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
       propertyPath: m_Name
       value: Mountain_02 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362722233706330, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641600170298054, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4597459064730808, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
       propertyPath: m_RootOrder
@@ -1224,6 +1520,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_Size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.0010572372
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.000057237117
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.000006977464
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
 --- !u!1001 &1413354849
@@ -1233,9 +1549,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1737484874}
     m_Modifications:
+    - target: {fileID: 1116564543275048, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1348583502729984, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1362722233706330, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
       propertyPath: m_Name
       value: Mountain_02 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362722233706330, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641600170298054, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4597459064730808, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
       propertyPath: m_RootOrder
@@ -1293,6 +1625,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_Size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.0010572372
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.000057237117
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.000006977464
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
 --- !u!1001 &1526183567
@@ -1302,9 +1654,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1737484874}
     m_Modifications:
+    - target: {fileID: 1649900449727358, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1729850361431790, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
       propertyPath: m_Name
       value: Mountain_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729850361431790, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1730853569426306, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763870085372918, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4551950118038164, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
       propertyPath: m_RootOrder
@@ -1364,8 +1732,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 205699178633270382, guid: aba4846911a4e4940b4a0d86ed48706f,
         type: 3}
+      propertyPath: m_Size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 205699178633270382, guid: aba4846911a4e4940b4a0d86ed48706f,
+        type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
-      value: 0.3990034
+      value: 0.0010572372
+      objectReference: {fileID: 0}
+    - target: {fileID: 205699178633270382, guid: aba4846911a4e4940b4a0d86ed48706f,
+        type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.000057237117
+      objectReference: {fileID: 0}
+    - target: {fileID: 205699178633270382, guid: aba4846911a4e4940b4a0d86ed48706f,
+        type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.000006977464
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
@@ -1413,7 +1796,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1737484874
 Transform:
@@ -1461,9 +1844,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1737484874}
     m_Modifications:
+    - target: {fileID: 1116564543275048, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1348583502729984, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1362722233706330, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
       propertyPath: m_Name
       value: Mountain_02 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362722233706330, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641600170298054, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4597459064730808, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
       propertyPath: m_RootOrder
@@ -1521,6 +1920,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_Size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.0010572372
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.000057237117
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.000006977464
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
 --- !u!4 &1940365687 stripped
@@ -1536,9 +1955,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1737484874}
     m_Modifications:
+    - target: {fileID: 1649900449727358, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1729850361431790, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
       propertyPath: m_Name
       value: Mountain_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729850361431790, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1730853569426306, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763870085372918, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4551950118038164, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
       propertyPath: m_RootOrder
@@ -1598,8 +2033,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 205699178633270382, guid: aba4846911a4e4940b4a0d86ed48706f,
         type: 3}
+      propertyPath: m_Size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 205699178633270382, guid: aba4846911a4e4940b4a0d86ed48706f,
+        type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
-      value: 0.3990034
+      value: 0.0010572372
+      objectReference: {fileID: 0}
+    - target: {fileID: 205699178633270382, guid: aba4846911a4e4940b4a0d86ed48706f,
+        type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.000057237117
+      objectReference: {fileID: 0}
+    - target: {fileID: 205699178633270382, guid: aba4846911a4e4940b4a0d86ed48706f,
+        type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.000006977464
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
@@ -1610,9 +2060,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1737484874}
     m_Modifications:
+    - target: {fileID: 1649900449727358, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1729850361431790, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
       propertyPath: m_Name
       value: Mountain_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729850361431790, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1730853569426306, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763870085372918, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4551950118038164, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
       propertyPath: m_RootOrder
@@ -1672,8 +2138,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 205699178633270382, guid: aba4846911a4e4940b4a0d86ed48706f,
         type: 3}
+      propertyPath: m_Size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 205699178633270382, guid: aba4846911a4e4940b4a0d86ed48706f,
+        type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
-      value: 0.3990034
+      value: 0.0010572372
+      objectReference: {fileID: 0}
+    - target: {fileID: 205699178633270382, guid: aba4846911a4e4940b4a0d86ed48706f,
+        type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.000057237117
+      objectReference: {fileID: 0}
+    - target: {fileID: 205699178633270382, guid: aba4846911a4e4940b4a0d86ed48706f,
+        type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.000006977464
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aba4846911a4e4940b4a0d86ed48706f, type: 3}
@@ -1690,9 +2171,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1737484874}
     m_Modifications:
+    - target: {fileID: 1116564543275048, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1348583502729984, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1362722233706330, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
       propertyPath: m_Name
       value: Mountain_02 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362722233706330, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641600170298054, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4597459064730808, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
       propertyPath: m_RootOrder
@@ -1750,6 +2247,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_Size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.0010572372
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.000057237117
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.000006977464
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
 --- !u!1001 &2033492687
@@ -1759,9 +2276,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1737484874}
     m_Modifications:
+    - target: {fileID: 1116564543275048, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1348583502729984, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1362722233706330, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
       propertyPath: m_Name
       value: Mountain_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362722233706330, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641600170298054, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4597459064730808, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
       propertyPath: m_RootOrder
@@ -1819,6 +2352,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_Size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.0010572372
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.000057237117
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.000006977464
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
 --- !u!4 &2033492688 stripped
@@ -1834,9 +2387,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1737484874}
     m_Modifications:
+    - target: {fileID: 1116564543275048, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1348583502729984, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1362722233706330, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
       propertyPath: m_Name
       value: Mountain_02 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362722233706330, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641600170298054, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4597459064730808, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
       propertyPath: m_RootOrder
@@ -1896,8 +2465,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
         type: 3}
+      propertyPath: m_Size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
-      value: 0.54992527
+      value: 0.0010572372
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.000057237117
+      objectReference: {fileID: 0}
+    - target: {fileID: 205120326828576112, guid: 24238c77e23c6c94086a436550f15df1,
+        type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.000006977464
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24238c77e23c6c94086a436550f15df1, type: 3}
@@ -1914,9 +2498,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1737484874}
     m_Modifications:
+    - target: {fileID: 1681846679567288, guid: e4fbe32d2ecb54b49acb5d525c540977, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1712180076268674, guid: e4fbe32d2ecb54b49acb5d525c540977, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1852880002051974, guid: e4fbe32d2ecb54b49acb5d525c540977, type: 3}
       propertyPath: m_Name
       value: Mountain_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1852880002051974, guid: e4fbe32d2ecb54b49acb5d525c540977, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1903603168266058, guid: e4fbe32d2ecb54b49acb5d525c540977, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4931162135374714, guid: e4fbe32d2ecb54b49acb5d525c540977, type: 3}
       propertyPath: m_RootOrder
@@ -1973,6 +2573,26 @@ PrefabInstance:
     - target: {fileID: 4931162135374714, guid: e4fbe32d2ecb54b49acb5d525c540977, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 205549641234371938, guid: e4fbe32d2ecb54b49acb5d525c540977,
+        type: 3}
+      propertyPath: m_Size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 205549641234371938, guid: e4fbe32d2ecb54b49acb5d525c540977,
+        type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.0010572372
+      objectReference: {fileID: 0}
+    - target: {fileID: 205549641234371938, guid: e4fbe32d2ecb54b49acb5d525c540977,
+        type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.000057237117
+      objectReference: {fileID: 0}
+    - target: {fileID: 205549641234371938, guid: e4fbe32d2ecb54b49acb5d525c540977,
+        type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.000006977464
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4fbe32d2ecb54b49acb5d525c540977, type: 3}
