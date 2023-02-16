@@ -1,1 +1,0 @@
-# SkiingSimulator: branch «Develop»
