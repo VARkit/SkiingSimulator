@@ -12,6 +12,7 @@ public class OnJoinedRoom : MonoBehaviour
     public GameObject[] arrows;
     public GameObject UxrAvatar;
     bool IsTransformed;
+    public float PlayerNum;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +28,7 @@ public class OnJoinedRoom : MonoBehaviour
             JoinRoom.connected_players += 1;
             JoinRoom.Changed();
             IsTransformed = true;
+            PlayerNum = JoinRoom.PreviousValue;
         }
     }
 }
