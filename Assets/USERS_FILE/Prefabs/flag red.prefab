@@ -295,8 +295,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.00035966482, y: 1.2318479, z: 0.016999995}
-  m_Center: {x: 0.00000010024305, y: 0.6107603, z: 0.008499916}
+  m_Size: {x: 0.00035966482, y: 1.5881171, z: 0.016999997}
+  m_Center: {x: 0.00000010023921, y: 0.78889537, z: 0.008499918}
 --- !u!114 &581251330438456298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -310,6 +310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   red_screen: {fileID: 0}
+  playerNum: 0
 --- !u!82 &6160422702897607104
 AudioSource:
   m_ObjectHideFlags: 0
@@ -668,8 +669,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.00035966482, y: 0.88755375, z: 0.016999995}
-  m_Center: {x: -0.000000014131708, y: -0.43861303, z: 0.008500035}
+  m_Size: {x: 0.00035966482, y: 1.3426559, z: 0.016999997}
+  m_Center: {x: -0.000000014130164, y: -0.6661629, z: 0.008500037}
 --- !u!114 &581251329546471496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -683,6 +684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   red_screen: {fileID: 0}
+  playerNum: 0
 --- !u!82 &6160422703474316403
 AudioSource:
   m_ObjectHideFlags: 0
