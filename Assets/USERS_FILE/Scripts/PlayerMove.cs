@@ -64,7 +64,7 @@ public class PlayerMove : MonoBehaviour
             //    rb.drag = _x / 1.2f;
             //}
 
-            rb.drag = Camera.localRotation.z / 1.2f;
+            rb.drag = Math.Abs(Camera.localRotation.z) / 1.2f;
         }
     }
     private void OnTriggerEnter(Collider other)
