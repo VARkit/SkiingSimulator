@@ -12,6 +12,7 @@ public class FinishStatistic : MonoBehaviour
     public bool finished;
     public PlayerMove Move;
     public float collisions;
+    public float collisionsSecond;
     public TextMeshProUGUI collision_text;
     public TextMeshProUGUI collision_textSecond;
     public TextMeshProUGUI Who_Win_Lose;
@@ -20,7 +21,6 @@ public class FinishStatistic : MonoBehaviour
     public NET_FinishCollision NET_FinishCollision;
     public AudioSource Sound;
     public AudioClip lose;
-    int whofinished;
     public FinStatSync FinStatSync;
     void Update()
     {
@@ -30,16 +30,15 @@ public class FinishStatistic : MonoBehaviour
             {
                 time += Time.deltaTime;
             }
-            if (NET_FinishCollision.ColFinished == 1)
+            if (NET_FinishCollision.ColFinished == 2)
             {   
-
-                if (FinStatSync.ColSecondPrev > FinStatSync.colFirstPrev && FinStatSync.TimeSecondPrev > FinStatSync.timeFirstPrev)
-                {
-                    FinStatSync.WhoWin_net = "Победил игрок справа!";
-                }
-                else if (FinStatSync.colFirstPrev != 0 && FinStatSync.ColSecondPrev != 0)
+                if (FinStatSync.colFirstPrev != 0 && FinStatSync.ColSecondPrev != 0)
                 {
                     FinStatSync.WhoWin_net = "Никто не победил. оба игрока сбили 1 и более флажков";
+                }
+                else if (FinStatSync.ColSecondPrev > FinStatSync.colFirstPrev && FinStatSync.TimeSecondPrev > FinStatSync.timeFirstPrev)
+                {
+                    FinStatSync.WhoWin_net = "Победил игрок справа!";
                 }
                 else
                 {
@@ -52,7 +51,6 @@ public class FinishStatistic : MonoBehaviour
                // collision_textSecond.text = FinStatSync.ColSecondPrev.ToString();
                 time_text.text = $"{(Math.Round(FinStatSync.timeFirstPrev, 2)).ToString()} секунд";
                 //   time_textSecond.text = FinStatSync.TimeSecondPrev.ToString();
-                Move.tormoz = true;
                 finished = true;
                 //if (collisions == 0)
                 //{
@@ -60,7 +58,6 @@ public class FinishStatistic : MonoBehaviour
                 //int seconds = Int32.Parse(time.ToString().Split(":")[1]);
                 //Stat.StampToStat(minutes * 60 + seconds);
                 //}
-
                 //Stat.ViewStat(BestTimeText);
             }
         }

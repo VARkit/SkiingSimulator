@@ -6,6 +6,7 @@ public class WrongColision : MonoBehaviour
     FinishStatistic TimerDist;
     AudioSource AudioSource;
     public float playerNum;
+    public FinStatSync sync;
     private void Start()
     {
         TimerDist = GameObject.Find("FinCanv").GetComponent<FinishStatistic>();
@@ -22,8 +23,15 @@ public class WrongColision : MonoBehaviour
     {
         GetComponent<BoxCollider>().enabled = false;
         red_screen.SetActive(true);
-        TimerDist.collisions++;
+        if(playerNum == 1)
+        {
+            sync.colFirst++;
+        }
+        else
+        {
+            sync.ColSecond++;
+        }
         AudioSource.Play();
-
+        sync.Changed();
     }
 }

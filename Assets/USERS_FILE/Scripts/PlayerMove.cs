@@ -11,6 +11,9 @@ public class PlayerMove : MonoBehaviour
     public Rigidbody rb;
     public Transform ski;
     public float _q;
+    public OnJoinedRoom OnJoinedRoom;
+    public FinStatSync sync;
+    public FinishStatistic FinishStatistic;
 
     private void FixedUpdate()
     {
@@ -25,6 +28,15 @@ public class PlayerMove : MonoBehaviour
                     gameObject.GetComponent<Rigidbody>().isKinematic = true;
                 }
             }
+            if(OnJoinedRoom.PlayerNum == 1)
+            {
+                sync.timeFirst = FinishStatistic.time;
+            }
+            else if (OnJoinedRoom.PlayerNum == 2)
+            {
+                sync.TimeSecond = FinishStatistic.time;
+            }
+            sync.Changed();
         }
 
         else if (go)
@@ -53,6 +65,13 @@ public class PlayerMove : MonoBehaviour
             //}
 
             rb.drag = Camera.localRotation.z / 1.2f;
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "FinCol")
+        {
+            tormoz = true;
         }
     }
 

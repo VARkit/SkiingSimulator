@@ -8,10 +8,11 @@ public class FinishColision : MonoBehaviour
 {
     public FinishStatistic timer;
     public NET_FinishCollision NET_FinishCollision;
-    public FinStatSync sync;
     public float LocalTime;
     public float LocalCol;
+    public float LocalCol2;
     public int Player_number;
+    public PlayerMove PlayerMove;
     private void OnTriggerEnter(Collider collision)
     {   
         timer.finished = true;
@@ -19,21 +20,7 @@ public class FinishColision : MonoBehaviour
         {
             NET_FinishCollision.ColFinished += 1;
         }
-   
-        LocalTime = timer.time;
-
         LocalCol = timer.collisions;
-        if (Player_number == 1)
-        {
-            sync.colFirst = LocalCol;
-            sync.timeFirst = LocalTime;
-        }
-        if (Player_number == 2)
-        {
-            sync.ColSecond = LocalCol;
-            sync.ColSecond = LocalTime;
-        }
-        sync.Changed();
         if(LocalCol > 0)
         {
         timer.Sound.clip = timer.lose;
