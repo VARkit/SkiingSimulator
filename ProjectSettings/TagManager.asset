@@ -8,6 +8,7 @@ TagManager:
   - projectile
   - RoomLight
   - FxTemporaire
+  - FinCol
   layers:
   - Default
   - TransparentFX

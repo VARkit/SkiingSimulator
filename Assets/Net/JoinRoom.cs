@@ -10,15 +10,12 @@ public class JoinRoom : RealtimeComponent<JoinRoom_Network>
 
     public int connected_players;
     public int PreviousValue;
-    public Transform[] SpawnPoints;
-    public GameObject Avatar;
 
     public void Changed()
     {
         
             GetComponent<JoinRoom>().SetValue(connected_players);
             PreviousValue = connected_players;
-            Avatar.transform.position = SpawnPoints[PreviousValue - 1].position;
         
             
     }
