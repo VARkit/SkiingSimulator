@@ -9,7 +9,7 @@ public class OnOffFinishStat : MonoBehaviour
 
     void Update()
     {
-        if(NET_FinishCollision.Prev == 2)
+        if(NET_FinishCollision.ColFinished == 2)
         {
             finCanv.SetActive(true);
         }

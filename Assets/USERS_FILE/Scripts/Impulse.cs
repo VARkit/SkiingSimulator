@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Impulse : MonoBehaviour
 {
-    public float impulse;
+    public int impulseStart;
     GameObject player;
     Rigidbody playerRB;
     public PlayerMove Move;
@@ -15,7 +15,7 @@ public class Impulse : MonoBehaviour
     }
     public void DoImpulse()
     {
-        playerRB.AddForce(100000, 0, 0);
+        playerRB.AddForce(0 , 0, impulseStart);
         Move.go = true;
     }
 }
