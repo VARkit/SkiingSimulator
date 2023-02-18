@@ -5,6 +5,7 @@ public class LoadScene : MonoBehaviour
 {
     public void LoadFirstScene()
     {
-        SceneManager.LoadScene("SampleScene");
+        print("CALL");
+        SceneManager.LoadScene("TraceFor2Players");
     }
 }
