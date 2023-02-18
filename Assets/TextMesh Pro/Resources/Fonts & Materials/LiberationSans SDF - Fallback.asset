@@ -193,19 +193,25 @@ MonoBehaviour:
     m_StrikethroughOffset: 18
     m_StrikethroughThickness: 6.298828
     m_TabWidth: 24
+
   m_GlyphTable: []
   m_CharacterTable: []
+
   m_AtlasTextures:
   - {fileID: 28268798066460806}
   m_AtlasTextureIndex: 0
   m_IsMultiAtlasTexturesEnabled: 0
   m_ClearDynamicDataOnBuild: 1
+
   m_UsedGlyphRects: []
+
   m_FreeGlyphRects:
   - m_X: 0
+
     m_Y: 0
     m_Width: 511
     m_Height: 511
+
   m_fontInfo:
     Name: Liberation Sans
     PointSize: 86
@@ -237,7 +243,9 @@ MonoBehaviour:
   m_KerningTable:
     kerningPairs: []
   m_FontFeatureTable:
+
     m_GlyphPairAdjustmentRecords: []
+
   fallbackFontAssets: []
   m_FallbackFontAssetTable: []
   m_CreationSettings:
@@ -345,8 +353,10 @@ Texture2D:
   m_LightmapFormat: 0
   m_ColorSpace: 0
   m_PlatformBlob: 
+
   image data: 0
   _typelessdata: 
+
   m_StreamData:
     serializedVersion: 2
     offset: 0
