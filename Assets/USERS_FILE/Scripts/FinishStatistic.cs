@@ -22,6 +22,7 @@ public class FinishStatistic : MonoBehaviour
     public AudioSource Sound;
     public AudioClip lose;
     public FinStatSync FinStatSync;
+    public GameObject Zaglushka;
     void Update()
     {
         if (timer.canvas.activeSelf == false)
@@ -45,6 +46,7 @@ public class FinishStatistic : MonoBehaviour
                     FinStatSync.WhoWin_net = "Победил игрок слева!";
                 }
                 Ambient.volume = 0.05f;
+                Zaglushka.SetActive(false);
                 Panel.gameObject.SetActive(true);
                 collision_text.text = FinStatSync.colFirst.ToString();
                 Who_Win_Lose.text = FinStatSync.WhoWin_net_prev;

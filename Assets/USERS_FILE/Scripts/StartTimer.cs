@@ -10,11 +10,12 @@ public class StartTimer : MonoBehaviour
     public Impulse Impulse;
     public AudioSource AudioSource;
     public AudioSource Ambient;
-
+    
     public void OnStart()
     {
         StartCoroutine(startint());
     }
+    
 
     public IEnumerator startint()
     {

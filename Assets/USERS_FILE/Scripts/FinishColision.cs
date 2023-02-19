@@ -11,8 +11,8 @@ public class FinishColision : MonoBehaviour
     public float LocalTime;
     public float LocalCol;
     public float LocalCol2;
-    public int Player_number;
     public PlayerMove PlayerMove;
+    public GameObject[] finishPivots;
     private void OnTriggerEnter(Collider collision)
     {   
         timer.finished = true;

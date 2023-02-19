@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Impulse : MonoBehaviour
 {
-    public int impulseStart;
+    public Vector3 impulseStart;
     GameObject player;
     Rigidbody playerRB;
     public PlayerMove Move;
@@ -15,7 +15,7 @@ public class Impulse : MonoBehaviour
     }
     public void DoImpulse()
     {
-        playerRB.AddForce(0 , 0, impulseStart);
+        playerRB.velocity = impulseStart * -1;
         Move.go = true;
     }
 }
