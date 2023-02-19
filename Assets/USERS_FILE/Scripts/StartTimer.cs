@@ -10,12 +10,16 @@ public class StartTimer : MonoBehaviour
     public Impulse Impulse;
     public AudioSource AudioSource;
     public AudioSource Ambient;
-
+    
     public void OnStart()
     {
         StartCoroutine(startint());
     }
-
+    
+    public void Nachalo()
+    {
+      //  Impulse.gameObject.transform.position
+    }
     public IEnumerator startint()
     {
         AudioSource.enabled = false;
