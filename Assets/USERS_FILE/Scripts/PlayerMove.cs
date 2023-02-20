@@ -15,6 +15,7 @@ public class PlayerMove : MonoBehaviour
     public FinStatSync sync;
     public FinishStatistic FinishStatistic;
     public GameObject finPivot;
+    public float mnojitel;
 
 
     private void FixedUpdate()
@@ -44,6 +45,13 @@ public class PlayerMove : MonoBehaviour
             if (Camera.localRotation.w > 0)
             {
                 rb.velocity = new Vector3(Camera.localRotation.z * rb.velocity.z * 5 * rb.velocity.z / 50, rb.velocity.y, rb.velocity.z);
+
+                if (rb.velocity.x >= 20f)
+                {
+
+                    rb.velocity = new Vector3(Camera.localRotation.z * rb.velocity.z * mnojitel * rb.velocity.z / 50, rb.velocity.y, rb.velocity.z);
+
+                }
                 if (rb.velocity.x >= 45f)
                 {
                     
