@@ -15,7 +15,7 @@ public class OnJoinedRoom : MonoBehaviour
     public GameObject UxrAvatar;
     public Start start;
     bool IsTransformed;
-    public float PlayerNum;
+    public int PlayerNum;
     Transform LocalPivot;
     bool finalTransformed;
     public GameObject startCanv;
