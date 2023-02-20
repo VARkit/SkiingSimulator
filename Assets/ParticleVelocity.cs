@@ -9,6 +9,6 @@ public class ParticleVelocity : MonoBehaviour
 
     void Update()
     {
-        ps.startSpeed = rb.velocity.z;
+        ps.emissionRate = -2f * rb.velocity.z;
     }
 }
