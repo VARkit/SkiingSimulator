@@ -14,20 +14,13 @@ public class PlayerMove : MonoBehaviour
     public OnJoinedRoom OnJoinedRoom;
     public FinStatSync sync;
     public FinishStatistic FinishStatistic;
+    GameObject finPivot;
 
     private void FixedUpdate()
     {
         if (tormoz)
         {
-            if (gameObject.GetComponent<Rigidbody>().velocity.z < 0)
-            {
-                go = false;
-                gameObject.GetComponent<Rigidbody>().velocity += new Vector3(0, 0, 3);
-                if (gameObject.GetComponent<Rigidbody>().velocity.z >= 0)
-                {
-                    gameObject.GetComponent<Rigidbody>().isKinematic = true;
-                }
-            }
+            
             if(OnJoinedRoom.PlayerNum == 1)
             {
                 sync.timeFirst = FinishStatistic.time;
@@ -37,6 +30,9 @@ public class PlayerMove : MonoBehaviour
                 sync.TimeSecond = FinishStatistic.time;
             }
             sync.Changed();
+            transform.position = Vector3.Lerp(transform.position, finPivot.transform.position, 0.04f);
+            rb.isKinematic = true;
+
         }
 
         else if (go)
@@ -64,7 +60,7 @@ public class PlayerMove : MonoBehaviour
             //    rb.drag = _x / 1.2f;
             //}
 
-           // rb.drag = Math.Abs(Camera.localRotation.z) / 1.2f;
+            rb.drag = Math.Abs(Camera.localRotation.z) / 3f;
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -72,6 +68,7 @@ public class PlayerMove : MonoBehaviour
         if(other.gameObject.tag == "FinCol")
         {
             tormoz = true;
+            finPivot = other.gameObject.GetComponent<FinishColision>().finishPivots[OnJoinedRoom.PlayerNum - 1];
         }
     }
 
