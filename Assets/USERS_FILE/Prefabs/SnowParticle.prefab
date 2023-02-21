@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6534870922954810471}
   - component: {fileID: 6534870922954810465}
   m_Layer: 3
-  m_Name: Particle System
+  m_Name: SnowParticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
