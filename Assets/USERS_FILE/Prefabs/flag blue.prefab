@@ -254,6 +254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   red_screen: {fileID: 0}
   playerNum: 0
+  sync: {fileID: 0}
 --- !u!82 &5308313146572310867
 AudioSource:
   m_ObjectHideFlags: 0
@@ -574,6 +575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   red_screen: {fileID: 0}
   playerNum: 0
+  sync: {fileID: 0}
 --- !u!82 &5308313146711393801
 AudioSource:
   m_ObjectHideFlags: 0

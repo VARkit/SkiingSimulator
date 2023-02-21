@@ -27,10 +27,7 @@ public class FinishStatistic : MonoBehaviour
     {
         if (timer.canvas.activeSelf == false)
         {
-            if (!finished)
-            {
-                time += Time.deltaTime;
-            }
+            time += Time.deltaTime;
             if (NET_FinishCollision.ColFinished == 2)
             {   
                 if (FinStatSync.colFirstPrev != 0 && FinStatSync.ColSecondPrev != 0)
