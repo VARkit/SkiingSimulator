@@ -14,10 +14,10 @@ public class Start : RealtimeComponent<Start_Networking>
     public void Update()
     {
             if(Prev != Touch_count)
-        {
-            GetComponent<Start>().SetValue(Touch_count);
-            Prev = Touch_count;
-        }
+            {
+                GetComponent<Start>().SetValue(Touch_count);
+                Prev = Touch_count;
+            }
             
             
 
