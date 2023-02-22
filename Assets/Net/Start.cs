@@ -19,8 +19,6 @@ public class Start : RealtimeComponent<Start_Networking>
                 Prev = Touch_count;
             }
             
-            
-
     }
     private void UpdateIntValue()
     {

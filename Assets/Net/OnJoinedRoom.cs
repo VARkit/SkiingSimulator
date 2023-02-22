@@ -6,6 +6,7 @@ using Normal.Realtime;
 using UltimateXR.Avatar;
 using Mono.Cecil;
 using Unity.VisualScripting;
+using UnityEngine.Serialization;
 
 public class OnJoinedRoom : MonoBehaviour
 {
@@ -19,10 +20,33 @@ public class OnJoinedRoom : MonoBehaviour
     Transform LocalPivot;
     bool finalTransformed;
     public GameObject startCanv;
+    RealtimeAvatar NonBinaryAvatar;
+    [SerializeField]
+    private RealtimeAvatar LocalAvatar;
+    [SerializeField]
+    private RealtimeAvatar RemoteAvatar;
+    public Transform Chest;
+    public Camera camera;
     void FixedUpdate()
     {
+        
         if (Realtime.connected && !IsTransformed)
         {
+            if (LocalAvatar == null | RemoteAvatar == null)
+            {
+                NonBinaryAvatar = GameObject.FindWithTag("Avatar").GetComponent<RealtimeAvatar>();
+                if (NonBinaryAvatar.isOwnedLocallyInHierarchy)
+                {
+                    LocalAvatar = NonBinaryAvatar;
+                    NonBinaryAvatar.tag = "Untagged";
+                }
+                else
+                {
+                    NonBinaryAvatar.tag = "Untagged";
+                    RemoteAvatar = NonBinaryAvatar;
+                }
+                print(NonBinaryAvatar.ownerIDSelf);
+            } 
             UxrAvatar.transform.position = arrows[JoinRoom.connected_players].transform.position;
             LocalPivot = arrows[JoinRoom.connected_players].transform;
             JoinRoom.connected_players += 1;
@@ -34,8 +58,37 @@ public class OnJoinedRoom : MonoBehaviour
         {
             UxrAvatar.transform.position  = Vector3.Lerp(UxrAvatar.transform.position, LocalPivot.GetChild(0).position, 0.015f);
         }
-
-
-
+        if ((LocalAvatar == null | RemoteAvatar == null) && Realtime.connected)
+            {
+                if(GameObject.FindWithTag("Avatar") != null)
+                {
+                    NonBinaryAvatar = GameObject.FindWithTag("Avatar").GetComponent<RealtimeAvatar>();
+                }
+                if (NonBinaryAvatar.isOwnedLocallyInHierarchy)
+                {
+                    LocalAvatar = NonBinaryAvatar;
+                    NonBinaryAvatar.tag = "Untagged";
+                }
+                else
+                {
+                    NonBinaryAvatar.tag = "Untagged";
+                    RemoteAvatar = NonBinaryAvatar;
+                }
+        }
+        else if (LocalAvatar != null && RemoteAvatar != null && LocalAvatar.GetComponent<HeadAndHelmet>().JacketRed.activeSelf == true)
+        {
+            if (PlayerNum == 1)
+            {
+                LocalAvatar.GetComponent<HeadAndHelmet>().JacketRed.SetActive(false);
+                LocalAvatar.GetComponent<HeadAndHelmet>().JacketBlue.SetActive(false);
+                RemoteAvatar.GetComponent<HeadAndHelmet>().JacketBlue.SetActive(false);
+            }
+            else
+            {
+                LocalAvatar.GetComponent<HeadAndHelmet>().JacketRed.SetActive(false);
+                LocalAvatar.GetComponent<HeadAndHelmet>().JacketBlue.SetActive(false);
+                RemoteAvatar.GetComponent<HeadAndHelmet>().JacketRed.SetActive(false);
+            }
+        }
     }
 }
