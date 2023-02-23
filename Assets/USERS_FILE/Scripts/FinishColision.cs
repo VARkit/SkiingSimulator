@@ -20,12 +20,15 @@ public class FinishColision : MonoBehaviour
             NET_FinishCollision.ColFinished += 1;
             print(collision.gameObject.name);
         }
+
         gameObject.GetComponent<BoxCollider>().enabled = false;
         LocalCol = timer.collisions;
+
         if(LocalCol > 0)
         {
-        timer.Sound.clip = timer.lose;
+            timer.Sound.clip = timer.lose;
         }
+
         timer.Sound.Play();
     }
 }
