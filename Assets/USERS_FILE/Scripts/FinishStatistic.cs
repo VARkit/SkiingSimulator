@@ -58,7 +58,7 @@ public class FinishStatistic : MonoBehaviour
                 //Stat.ViewStat(BestTimeText);
             }
         }
-        else if (finished)
+        if (finished)
         {
                 collision_text.text = FinStatSync.colFirst.ToString();
                 Who_Win_Lose.text = FinStatSync.WhoWin_net_prev;
