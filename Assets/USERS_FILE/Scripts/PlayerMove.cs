@@ -36,7 +36,6 @@ public class PlayerMove : MonoBehaviour
             sync.Changed();
             transform.position = Vector3.Lerp(transform.position, finPivot.transform.position, 0.04f);
             rb.isKinematic = true;
-            hvatit = true;
         }
 
         else if (go)
