@@ -27,7 +27,7 @@ public class FinishStatistic : MonoBehaviour
 
     void Update()
     {
-        if (ResultCanvas.activeSelf == false)
+        if (Move.go)
         {
             time += Time.deltaTime;
             if (NET_FinishCollision.ColFinished == 2)
@@ -47,11 +47,6 @@ public class FinishStatistic : MonoBehaviour
                 Ambient.volume = 0.05f;
                 Zaglushka.SetActive(false);
                 Panel.gameObject.SetActive(true);
-                collision_text.text = FinStatSync.colFirst.ToString();
-                Who_Win_Lose.text = FinStatSync.WhoWin_net_prev;
-                collision_textSecond.text = FinStatSync.ColSecondPrev.ToString();
-                time_text.text = $"{(Math.Round(FinStatSync.timeFirstPrev, 2)).ToString()} секунд";
-                time_textSecond.text = FinStatSync.TimeSecondPrev.ToString();
                 finished = true;
 
                 //if (collisions == 0)
@@ -62,6 +57,14 @@ public class FinishStatistic : MonoBehaviour
                 //}
                 //Stat.ViewStat(BestTimeText);
             }
+        }
+        else if (finished)
+        {
+                collision_text.text = FinStatSync.colFirst.ToString();
+                Who_Win_Lose.text = FinStatSync.WhoWin_net_prev;
+                collision_textSecond.text = FinStatSync.ColSecondPrev.ToString();
+                time_text.text = $"{(Math.Round(FinStatSync.timeFirstPrev, 2)).ToString()} секунд";
+                time_textSecond.text = FinStatSync.TimeSecondPrev.ToString();
         }
     }
 }
