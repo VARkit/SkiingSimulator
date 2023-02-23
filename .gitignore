@@ -69,3 +69,7 @@ crashlytics-build.properties
 # Exceptions
 !*.dll
 !*.obj
+
+# Lighting
+/[Aa]ssets/USERS_FILE/Scenes/StartScene
+/[Aa]ssets/USERS_FILE/Scenes/TraceFor2Players

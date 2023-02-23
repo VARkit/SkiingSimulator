@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class FinishStatistic : MonoBehaviour
 {
+    public GameObject ResultCanvas;
     public float time;
     public TextMeshProUGUI time_text;
     public TextMeshProUGUI time_textSecond;
@@ -23,24 +24,25 @@ public class FinishStatistic : MonoBehaviour
     public AudioClip lose;
     public FinStatSync FinStatSync;
     public GameObject Zaglushka;
+
     void Update()
     {
-        if (timer.canvas.activeSelf == false)
+        if (ResultCanvas.activeSelf == false)
         {
             time += Time.deltaTime;
             if (NET_FinishCollision.ColFinished == 2)
             {   
                 if (FinStatSync.colFirstPrev != 0 && FinStatSync.ColSecondPrev != 0)
                 {
-                    FinStatSync.WhoWin_net = "����� �� �������. ��� ������ ����� 1 � ����� �������";
+                    FinStatSync.WhoWin_net = "Никто не победил. Все игроки сбили 1 или более флажков";
                 }
                 else if (FinStatSync.ColSecondPrev > FinStatSync.colFirstPrev && FinStatSync.TimeSecondPrev > FinStatSync.timeFirstPrev)
                 {
-                    FinStatSync.WhoWin_net = "������� ����� ������!";
+                    FinStatSync.WhoWin_net = "Победил синий игрок!";
                 }
                 else
                 {
-                    FinStatSync.WhoWin_net = "������� ����� �����!";
+                    FinStatSync.WhoWin_net = "Победил красный игрок!";
                 }
                 Ambient.volume = 0.05f;
                 Zaglushka.SetActive(false);
@@ -48,7 +50,7 @@ public class FinishStatistic : MonoBehaviour
                 collision_text.text = FinStatSync.colFirst.ToString();
                 Who_Win_Lose.text = FinStatSync.WhoWin_net_prev;
                 collision_textSecond.text = FinStatSync.ColSecondPrev.ToString();
-                time_text.text = $"{(Math.Round(FinStatSync.timeFirstPrev, 2)).ToString()} ������";
+                time_text.text = $"{(Math.Round(FinStatSync.timeFirstPrev, 2)).ToString()} секунд";
                 time_textSecond.text = FinStatSync.TimeSecondPrev.ToString();
                 finished = true;
 
