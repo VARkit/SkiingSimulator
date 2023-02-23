@@ -26,7 +26,6 @@ public class StartTimer : MonoBehaviour
         canvas.SetActive(false);
         Impulse.DoImpulse();
         Ambient.Play();
-
     }
     public void SourcePlay()
     {

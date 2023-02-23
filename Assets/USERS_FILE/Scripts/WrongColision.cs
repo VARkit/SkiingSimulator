@@ -7,30 +7,32 @@ public class WrongColision : MonoBehaviour
     AudioSource AudioSource;
     public float playerNum;
     public FinStatSync sync;
+    bool stop;
     private void Start()
     {
         TimerDist = GameObject.Find("FinCanv").GetComponent<FinishStatistic>();
         AudioSource = GetComponent<AudioSource>();
     }
     private void OnTriggerEnter(Collider other)
-    {  
-        if (playerNum == GameObject.Find("netSync").GetComponent<OnJoinedRoom>().PlayerNum)
-        {
-            OnWrongCol();
-        }
+    {       
+        OnWrongCol();      
     }
     public void OnWrongCol()
     {
-        GetComponent<BoxCollider>().enabled = false;
-        red_screen.SetActive(true);
-        if(playerNum == 1)
+        if (playerNum == GameObject.Find("netSync").GetComponent<OnJoinedRoom>().PlayerNum && !stop)
         {
-            sync.colFirst++;
+            GetComponent<BoxCollider>().enabled = false;
+            red_screen.SetActive(true);
+            if (playerNum == 1)
+            {
+                sync.colFirst++;
+            }
+            else
+            {
+                sync.ColSecond++;
+            }
+            AudioSource.Play();
+            stop = true;
         }
-        else
-        {
-            sync.ColSecond++;
-        }
-        AudioSource.Play();
     }
 }

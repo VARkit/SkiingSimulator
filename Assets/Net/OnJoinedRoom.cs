@@ -74,21 +74,22 @@ public class OnJoinedRoom : MonoBehaviour
                     NonBinaryAvatar.tag = "Untagged";
                     RemoteAvatar = NonBinaryAvatar;
                 }
+                LocalAvatar.GetComponent<HeadAndHelmet>().JacketRed.SetActive(false);
+                LocalAvatar.GetComponent<HeadAndHelmet>().JacketBlue.SetActive(false);
+                LocalAvatar.GetComponent<HeadAndHelmet>().HeadModel.SetActive(false);
+              //  LocalAvatar.GetComponent<HeadAndHelmet>().SkiMesh.SetActive(false);
         }
-        else if (LocalAvatar != null && RemoteAvatar != null && LocalAvatar.GetComponent<HeadAndHelmet>().JacketRed.activeSelf == true)
+        else if (LocalAvatar != null && RemoteAvatar != null && (RemoteAvatar.GetComponent<HeadAndHelmet>().JacketRed.activeSelf == true | RemoteAvatar.GetComponent<HeadAndHelmet>().JacketBlue.activeSelf == true))
         {
             if (PlayerNum == 1)
             {
-                LocalAvatar.GetComponent<HeadAndHelmet>().JacketRed.SetActive(false);
-                LocalAvatar.GetComponent<HeadAndHelmet>().JacketBlue.SetActive(false);
                 RemoteAvatar.GetComponent<HeadAndHelmet>().JacketBlue.SetActive(false);
             }
             else
             {
-                LocalAvatar.GetComponent<HeadAndHelmet>().JacketRed.SetActive(false);
-                LocalAvatar.GetComponent<HeadAndHelmet>().JacketBlue.SetActive(false);
                 RemoteAvatar.GetComponent<HeadAndHelmet>().JacketRed.SetActive(false);
             }
+
         }
     }
 }

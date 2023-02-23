@@ -25,7 +25,7 @@ public class FinishStatistic : MonoBehaviour
     public FinStatSync FinStatSync;
     public GameObject Zaglushka;
 
-    void Update()
+    void FixedUpdate()
     {
         if (Move.go)
         {

@@ -413,6 +413,9 @@ MonoBehaviour:
   JacketBlue: {fileID: 215040226611309566}
   JacketRed: {fileID: 2333346064746939495}
   Camera: {fileID: 4733341750025982243}
+  HeadModel: {fileID: 7422700136033180180}
+  SkiMesh: {fileID: 8303507615282358145}
+  Head: {fileID: 4098411418399560}
 --- !u!1 &1677690864260768
 GameObject:
   m_ObjectHideFlags: 0
@@ -987,7 +990,7 @@ PrefabInstance:
     - target: {fileID: 8931164913004151888, guid: c628b53692c8c7e4e906ba35edcaf101,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.001
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8931164913004151888, guid: c628b53692c8c7e4e906ba35edcaf101,
         type: 3}
@@ -1109,18 +1112,6 @@ MonoBehaviour:
   _syncScale: 1
   _syncVelocity: 1
   _maintainOwnershipWhileSleeping: 0
---- !u!114 &6053837002806128172
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8303507615282358145}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab548884a3d63554c8ce992c408e95e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1316932096188081664
 PrefabInstance:
   m_ObjectHideFlags: 0
