@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 648411425}
-  m_IndirectSpecularColor: {r: 0.118849955, g: 0.18339875, b: 0.32971463, a: 1}
+  m_IndirectSpecularColor: {r: 0.118812874, g: 0.18341923, b: 0.32987553, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -18853,7 +18853,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "46,28 \u0441\u0435\u043A\u0443\u043D\u0434"
+  m_text: "\u0412\u0440\u0435\u043C\u044F \u043F\u0440\u043E\u0445\u043E\u0436\u0434\u0435\u043D\u0438\u044F"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 64b3c837792b4ca438808e11e56d481c, type: 2}
   m_sharedMaterial: {fileID: -2570815094922813490, guid: 64b3c837792b4ca438808e11e56d481c,
@@ -31680,7 +31680,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "41,56 \u0441\u0435\u043A\u0443\u043D\u0434"
+  m_text: "\u0412\u0440\u0435\u043C\u044F \u043F\u0440\u043E\u0445\u043E\u0436\u0434\u0435\u043D\u0438\u044F"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 64b3c837792b4ca438808e11e56d481c, type: 2}
   m_sharedMaterial: {fileID: -2570815094922813490, guid: 64b3c837792b4ca438808e11e56d481c,
@@ -51950,7 +51950,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1939197315520378404
 MonoBehaviour:
   m_ObjectHideFlags: 0
