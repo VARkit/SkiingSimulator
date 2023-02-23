@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 648411425}
-  m_IndirectSpecularColor: {r: 0.118812874, g: 0.18341923, b: 0.32987553, a: 1}
+  m_IndirectSpecularColor: {r: 0.11884414, g: 0.18339847, b: 0.32972908, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -61164,7 +61164,7 @@ PrefabInstance:
     - target: {fileID: 6250898373972891702, guid: a9b819c9350ee0740b8ed984bb254cc9,
         type: 3}
       propertyPath: m_TreeBillboardDistance
-      value: 400
+      value: 800
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6250898373956744630, guid: a9b819c9350ee0740b8ed984bb254cc9, type: 3}
