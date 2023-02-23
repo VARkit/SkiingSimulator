@@ -32,25 +32,26 @@ public class FinishStatistic : MonoBehaviour
             {   
                 if (FinStatSync.colFirstPrev != 0 && FinStatSync.ColSecondPrev != 0)
                 {
-                    FinStatSync.WhoWin_net = "Никто не победил. оба игрока сбили 1 и более флажков";
+                    FinStatSync.WhoWin_net = "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ 1 пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
                 }
                 else if (FinStatSync.ColSecondPrev > FinStatSync.colFirstPrev && FinStatSync.TimeSecondPrev > FinStatSync.timeFirstPrev)
                 {
-                    FinStatSync.WhoWin_net = "Победил игрок справа!";
+                    FinStatSync.WhoWin_net = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ!";
                 }
                 else
                 {
-                    FinStatSync.WhoWin_net = "Победил игрок слева!";
+                    FinStatSync.WhoWin_net = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ!";
                 }
                 Ambient.volume = 0.05f;
                 Zaglushka.SetActive(false);
                 Panel.gameObject.SetActive(true);
                 collision_text.text = FinStatSync.colFirst.ToString();
                 Who_Win_Lose.text = FinStatSync.WhoWin_net_prev;
-               // collision_textSecond.text = FinStatSync.ColSecondPrev.ToString();
-                time_text.text = $"{(Math.Round(FinStatSync.timeFirstPrev, 2)).ToString()} секунд";
-                //   time_textSecond.text = FinStatSync.TimeSecondPrev.ToString();
+                collision_textSecond.text = FinStatSync.ColSecondPrev.ToString();
+                time_text.text = $"{(Math.Round(FinStatSync.timeFirstPrev, 2)).ToString()} пїЅпїЅпїЅпїЅпїЅпїЅ";
+                time_textSecond.text = FinStatSync.TimeSecondPrev.ToString();
                 finished = true;
+
                 //if (collisions == 0)
                 //{
                 //int minutes = Int32.Parse(time.ToString().Split(":")[0]);
