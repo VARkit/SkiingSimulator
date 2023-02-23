@@ -64,7 +64,7 @@ public class FinishStatistic : MonoBehaviour
                 Who_Win_Lose.text = FinStatSync.WhoWin_net_prev;
                 collision_textSecond.text = FinStatSync.ColSecondPrev.ToString();
                 time_text.text = $"{(Math.Round(FinStatSync.timeFirstPrev, 2)).ToString()} секунд";
-                time_textSecond.text = FinStatSync.TimeSecondPrev.ToString();
+                time_textSecond.text = $"{(Math.Round(FinStatSync.TimeSecondPrev, 2)).ToString()} секунд";
         }
     }
 }
