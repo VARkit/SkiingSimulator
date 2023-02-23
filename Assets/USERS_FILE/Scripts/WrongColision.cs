@@ -32,6 +32,5 @@ public class WrongColision : MonoBehaviour
             sync.ColSecond++;
         }
         AudioSource.Play();
-        sync.Changed();
     }
 }

@@ -32,7 +32,6 @@ public class PlayerMove : MonoBehaviour
             {
                 sync.TimeSecond = FinishStatistic.time;
             }
-            sync.Changed();
             rb.isKinematic = true;
             hvatit = true;
         }

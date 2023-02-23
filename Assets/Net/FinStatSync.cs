@@ -19,7 +19,7 @@ public class FinStatSync : RealtimeComponent<FinColSyncModel>
     public float ColSecond;
     public float ColSecondPrev;
 
-    public void Changed()
+    public void Update()
     {
         GetComponent<FinStatSync>().SetValues(WhoWin_net, timeFirst, TimeSecond, colFirst, ColSecond);
         WhoWin_net_prev = WhoWin_net;
