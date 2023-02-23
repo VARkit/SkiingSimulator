@@ -9,6 +9,7 @@ TagManager:
   - RoomLight
   - FxTemporaire
   - FinCol
+  - Avatar
   layers:
   - Default
   - TransparentFX

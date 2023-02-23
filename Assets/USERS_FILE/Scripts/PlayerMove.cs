@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.InputSystem.XR.Haptics;
 
 public class PlayerMove : MonoBehaviour
 {
@@ -16,11 +17,12 @@ public class PlayerMove : MonoBehaviour
     public FinishStatistic FinishStatistic;
     public GameObject finPivot;
     public float mnojitel;
+    bool hvatit;
 
 
     private void FixedUpdate()
     {
-        if (tormoz)
+        if (tormoz && !hvatit)
         {
             
             if(OnJoinedRoom.PlayerNum == 1)
@@ -34,7 +36,7 @@ public class PlayerMove : MonoBehaviour
             sync.Changed();
             transform.position = Vector3.Lerp(transform.position, finPivot.transform.position, 0.04f);
             rb.isKinematic = true;
-
+            hvatit = true;
         }
 
         else if (go)

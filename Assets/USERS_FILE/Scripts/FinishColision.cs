@@ -14,12 +14,13 @@ public class FinishColision : MonoBehaviour
     public PlayerMove PlayerMove;
     public GameObject[] finishPivots;
     private void OnTriggerEnter(Collider collision)
-    {   
-        timer.finished = true;
-        if(collision.gameObject.tag == "Player")
+    {
+        if (collision.gameObject.tag == "Player")
         {
             NET_FinishCollision.ColFinished += 1;
+            print(collision.gameObject.name);
         }
+        gameObject.GetComponent<BoxCollider>().enabled = false;
         LocalCol = timer.collisions;
         if(LocalCol > 0)
         {
