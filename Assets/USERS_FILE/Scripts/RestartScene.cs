@@ -5,6 +5,6 @@ public class RestartScene : MonoBehaviour
 {
     public void ReastartLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene("StartScene");
     }
 }

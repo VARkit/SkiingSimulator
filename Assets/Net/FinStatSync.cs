@@ -21,13 +21,12 @@ public class FinStatSync : RealtimeComponent<FinColSyncModel>
 
     public void Changed()
     {
-        
-            GetComponent<FinStatSync>().SetValues(WhoWin_net, timeFirst, TimeSecond, colFirst, ColSecond);
-            WhoWin_net_prev = WhoWin_net;
-            timeFirstPrev = timeFirst;
-            TimeSecondPrev = TimeSecond;
-            colFirstPrev = colFirst;
-            ColSecondPrev = ColSecond;
+        GetComponent<FinStatSync>().SetValues(WhoWin_net, timeFirst, TimeSecond, colFirst, ColSecond);
+        WhoWin_net_prev = WhoWin_net;
+        timeFirstPrev = timeFirst;
+        TimeSecondPrev = TimeSecond;
+        colFirstPrev = colFirst;
+        ColSecondPrev = ColSecond;
     }
     private void UpdateWinnerValue()
     {

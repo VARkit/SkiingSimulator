@@ -17,14 +17,13 @@ public class PlayerMove : MonoBehaviour
     public FinishStatistic FinishStatistic;
     public GameObject finPivot;
     public float mnojitel;
-    bool hvatit;
+    public bool hvatit;
 
 
     private void FixedUpdate()
     {
         if (tormoz && !hvatit)
         {
-            
             if(OnJoinedRoom.PlayerNum == 1)
             {
                 sync.timeFirst = FinishStatistic.time;
@@ -34,8 +33,12 @@ public class PlayerMove : MonoBehaviour
                 sync.TimeSecond = FinishStatistic.time;
             }
             sync.Changed();
-            transform.position = Vector3.Lerp(transform.position, finPivot.transform.position, 0.04f);
             rb.isKinematic = true;
+            hvatit = true;
+        }
+        else if (tormoz)
+        {
+            transform.position = Vector3.Lerp(transform.position, finPivot.transform.position, 0.04f);
         }
 
         else if (go)
