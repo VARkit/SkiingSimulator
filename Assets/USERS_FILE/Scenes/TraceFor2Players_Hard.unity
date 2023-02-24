@@ -36172,7 +36172,7 @@ PrefabInstance:
     - target: {fileID: 1739424216011945054, guid: 6fa7094b861d10a4bac1b4fc2051baf7,
         type: 3}
       propertyPath: _roomToJoinOnStart
-      value: MainRoom
+      value: HardRoom
       objectReference: {fileID: 0}
     - target: {fileID: 1847998533402052344, guid: 6fa7094b861d10a4bac1b4fc2051baf7,
         type: 3}
