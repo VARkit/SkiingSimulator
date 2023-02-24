@@ -17669,6 +17669,7 @@ GameObject:
   - component: {fileID: 941161001}
   - component: {fileID: 941161000}
   - component: {fileID: 941160999}
+  - component: {fileID: 941161003}
   m_Layer: 5
   m_Name: StartCanv
   m_TagString: Untagged
@@ -17760,6 +17761,24 @@ RectTransform:
   m_AnchoredPosition: {x: -143.2, y: -361.22}
   m_SizeDelta: {x: 37.8952, y: 20.9356}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &941161003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941160998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07521b0732d327543ad102e617a223c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactionType: 1
+  _fingerTipMinHoverDistance: 0.05
+  _autoEnableLaserPointer: 1
+  _autoEnableDistance: 10
+  _allowLeftHand: 1
+  _allowRightHand: 1
 --- !u!1001 &941772399
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35416,6 +35435,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6534870922954810464, guid: b251f5504dc4c394ea758bdf85ed360e,
         type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6534870922954810464, guid: b251f5504dc4c394ea758bdf85ed360e,
+        type: 3}
       propertyPath: InitialModule.startSpeed.scalar
       value: 5.852859
       objectReference: {fileID: 0}
@@ -52303,7 +52327,7 @@ MonoBehaviour:
   _interactionType: 1
   _fingerTipMinHoverDistance: 0.05
   _autoEnableLaserPointer: 1
-  _autoEnableDistance: 100
+  _autoEnableDistance: 300
   _allowLeftHand: 1
   _allowRightHand: 1
 --- !u!223 &1939197315279902645
@@ -82872,7 +82896,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _handSide: 1
   _clickInput: 16384
-  _showLaserInput: 0
+  _showLaserInput: -1
   _showLaserButtonEvent: 0
   _optionalEnableWhenLaserOn: {fileID: 0}
   _useControllerForward: 1
@@ -107992,7 +108016,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _handSide: 0
   _clickInput: 16384
-  _showLaserInput: 0
+  _showLaserInput: -1
   _showLaserButtonEvent: 0
   _optionalEnableWhenLaserOn: {fileID: 0}
   _useControllerForward: 1
