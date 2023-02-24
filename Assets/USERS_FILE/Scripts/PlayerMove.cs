@@ -43,14 +43,14 @@ public class PlayerMove : MonoBehaviour
             }
             rb.isKinematic = true;
             hvatit = true;
-            go = false;
+            
         }
         else if (tormoz)
         {
             transform.position = Vector3.Lerp(transform.position, finPivot.transform.position, 0.04f);
         }
 
-        else if (go)
+        else if (go && !hvatit)
         {
             Z = Camera.localRotation.z;
             _x = Camera.localRotation.x;
