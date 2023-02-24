@@ -72,5 +72,5 @@ crashlytics-build.properties
 
 # Lighting
 /[Aa]ssets/USERS_FILE/Scenes/StartScene
-/[Aa]ssets/USERS_FILE/Scenes/TraceFor2Players_EasyLVL
-/[Aa]ssets/USERS_FILE/Scenes/TraceFor2Players_Hard
+/[Aa]ssets/USERS_FILE/Scenes/TraceFor2Players_EasyLVL\LightingData.asset
+/[Aa]ssets/USERS_FILE/Scenes/TraceFor2Players_Hard\LightingData.asset
