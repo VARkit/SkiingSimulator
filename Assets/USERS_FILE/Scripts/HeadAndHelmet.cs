@@ -10,14 +10,14 @@ public class HeadAndHelmet : MonoBehaviour
     public GameObject JacketRed;
     public GameObject HeadModel;
     public GameObject SkiMesh;
-    public Transform Head;
+    Transform Head;
     public PlayerMove PlayerMove;
     private void Update()
     {
         if(GameObject.Find("Player") != null)
         {
             PlayerMove = GameObject.Find("Player").GetComponent<PlayerMove>();
-            
+            Head = GameObject.Find("Camera").transform;
             if (Head.localRotation.w > 0 && PlayerMove.go)
             {
                 SkiMesh.transform.localRotation = new Quaternion(SkiMesh.transform.localRotation.x, -Head.localRotation.z, SkiMesh.transform.localRotation.z, SkiMesh.transform.localRotation.w);
