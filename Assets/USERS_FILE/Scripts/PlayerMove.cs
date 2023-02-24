@@ -16,8 +16,17 @@ public class PlayerMove : MonoBehaviour
     public FinStatSync sync;
     public FinishStatistic FinishStatistic;
     public GameObject finPivot;
-    public float mnojitel;
     public bool hvatit;
+
+
+    // переменные для изменения управления
+
+    public float mnojitel;
+    public float mnojitel2;
+    public float MaxSpeedFront;
+    public float SpeedForChangeVilosityX;
+    public bool MaxSpeedForword;
+    public float MaxVelocityForvard;
 
 
     private void FixedUpdate()
@@ -48,39 +57,47 @@ public class PlayerMove : MonoBehaviour
 
             if (Camera.localRotation.w > 0)
             {
-                rb.velocity = new Vector3(Camera.localRotation.z * rb.velocity.z * 5 * rb.velocity.z / 50, rb.velocity.y, rb.velocity.z);
+                rb.velocity = new Vector3(Camera.localRotation.z * rb.velocity.z * mnojitel * rb.velocity.z, rb.velocity.y, rb.velocity.z);
 
-                if (rb.velocity.x >= 20f)
+                if (rb.velocity.x >= SpeedForChangeVilosityX)
                 {
 
-                    rb.velocity = new Vector3(Camera.localRotation.z * rb.velocity.z * mnojitel * rb.velocity.z / 50, rb.velocity.y, rb.velocity.z);
+                    rb.velocity = new Vector3(Camera.localRotation.z * rb.velocity.z * mnojitel2 * rb.velocity.z , rb.velocity.y, rb.velocity.z);
 
                 }
-                if (rb.velocity.x >= 45f)
+                if (rb.velocity.x >= MaxSpeedFront)
                 {
                     
-                    rb.velocity = new Vector3(45, rb.velocity.y, rb.velocity.z);
+                    rb.velocity = new Vector3(MaxSpeedFront, rb.velocity.y, rb.velocity.z);
                     
+                }
+                if (rb.velocity.z < -MaxVelocityForvard && MaxSpeedForword)
+                {
+                    rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, -MaxVelocityForvard);
                 }
                // ski.transform.localRotation = new Quaternion(ski.transform.localRotation.x, -Camera.localRotation.z, ski.transform.localRotation.z, ski.transform.localRotation.w);
             }
             if (Camera.localRotation.w < 0)
             {
-                rb.velocity = new Vector3(-Camera.localRotation.z * rb.velocity.z * 5 * rb.velocity.z / 50, rb.velocity.y, rb.velocity.z);
+                rb.velocity = new Vector3(-Camera.localRotation.z * rb.velocity.z * mnojitel * rb.velocity.z, rb.velocity.y, rb.velocity.z);
 
-                if (rb.velocity.x >= 20f)
+                if (rb.velocity.x >= SpeedForChangeVilosityX)
                 {
 
-                    rb.velocity = new Vector3(-Camera.localRotation.z * rb.velocity.z * mnojitel * rb.velocity.z / 50, rb.velocity.y, rb.velocity.z);
+                    rb.velocity = new Vector3(-Camera.localRotation.z * rb.velocity.z * mnojitel2 * rb.velocity.z, rb.velocity.y, rb.velocity.z);
 
                 }
-                if (rb.velocity.x >= 45f)
+                if (rb.velocity.x >= MaxSpeedFront)
                 {
                     
-                    rb.velocity = new Vector3(45, rb.velocity.y, rb.velocity.z);
+                    rb.velocity = new Vector3(MaxSpeedFront, rb.velocity.y, rb.velocity.z);
                     
                 }
-              //  ski.transform.localRotation = new Quaternion(ski.transform.localRotation.x, Camera.localRotation.z, ski.transform.localRotation.z, ski.transform.localRotation.w);
+                if (rb.velocity.z < -MaxVelocityForvard && MaxSpeedForword)
+                {
+                    rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, -MaxVelocityForvard);
+                }
+                //  ski.transform.localRotation = new Quaternion(ski.transform.localRotation.x, Camera.localRotation.z, ski.transform.localRotation.z, ski.transform.localRotation.w);
                 // rb.velocity = new Vector3( -Camera.localRotation.z * rb.velocity.z * 5 * rb.velocity.z / 50, rb.velocity.y, rb.velocity.x);
                 // ski.transform.localRotation = new Quaternion(ski.transform.localRotation.x, Camera.localRotation.z, ski.transform.localRotation.z, ski.transform.localRotation.w);
             }

@@ -3,9 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class LoadScene : MonoBehaviour
 {
+    public string NameScene;
     public void LoadFirstScene()
     {
         print("CALL");
-        SceneManager.LoadScene("TraceFor2Players");
+        SceneManager.LoadScene(NameScene);
     }
 }
