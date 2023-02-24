@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 648411425}
-  m_IndirectSpecularColor: {r: 0.11884414, g: 0.18339847, b: 0.32972908, a: 1}
+  m_IndirectSpecularColor: {r: 0.118812874, g: 0.18341923, b: 0.32987553, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -36172,7 +36172,7 @@ PrefabInstance:
     - target: {fileID: 1739424216011945054, guid: 6fa7094b861d10a4bac1b4fc2051baf7,
         type: 3}
       propertyPath: _roomToJoinOnStart
-      value: MainRoom
+      value: HardRoom
       objectReference: {fileID: 0}
     - target: {fileID: 1847998533402052344, guid: 6fa7094b861d10a4bac1b4fc2051baf7,
         type: 3}
